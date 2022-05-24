@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwix Media</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    @@include('./blocks/header.html')
+    <nav class="nav__burger">
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Создание сайтов</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Продвижение</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Контекстная реклама</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Поддержка</a>
+          </li>
+          <li class="nav__item">
+            <a href="#!" class="nav__link">Изготовление контента</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    @@include('./blocks/hero.html')
+    @@include('./blocks/catalog.html')
+    @@include('./blocks/work.html')
+    @@include('./blocks/portfolio.html')
+    @@include('./blocks/reviews.html')
+    @@include('./blocks/audit.html')
+    @@include('./blocks/answers.html')
+    @@include('./blocks/cta.html')
+    @@include('./blocks/map.html')
+    @@include('./blocks/footer.html')
+  </div>
+
+    <!-- подключаем js -->
+<!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+    <script src="js/main.js"></script>
+</body>
+</html>

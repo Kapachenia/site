@@ -1,0 +1,104 @@
+//.answers
+.answers {
+  margin-top: 27px;
+  margin-bottom: 120px;
+  //.answers__title
+  &__title {
+    margin-bottom: 60px;
+  }
+  //.answers__list
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px 32px;
+  }
+  //.answers__item
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    //width: calc(50% - 16px);
+    width: 736px;
+    padding: 32px 60px 42px 40px;
+    border: 2px solid #A4A2A2;
+    border-radius: 10px;
+    height: max-content;
+    //.answers__item-title
+    &-title {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 29px;
+      min-height: 58px;
+    }
+    //.answers__item-text
+    &-text {
+      line-height: 25px;
+      height: 0;
+      font-size: 0;
+      visibility: hidden;
+    }
+    //.asnwers__item-icon
+    &-icon {
+      position: absolute;
+      top: 32px;
+      right: 32px;
+      cursor: pointer;
+      &--open {
+        transform: rotate(45deg);
+      }
+    }
+    //.answers__item--open
+    &--open {
+      padding-bottom: 36px;
+      & .answers__item-text {
+        font-size: 21px;
+        height: auto;
+        visibility: visible;
+      }
+      & .answers__item-title {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .answers__list {
+    justify-content: center;
+  }
+  .answers__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .answers__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .answers__item .answers__item-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .answers__item .answers__item-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .answers__item {
+    padding-left: 15px;
+    padding-right: 30px;
+    margin-left: 29px;
+    margin-right: 29px;
+    min-height: 60px;
+  }
+  .answers__item-icon {
+    top: 15px;
+    right: 15px;
+  }
+}

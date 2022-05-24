@@ -1,0 +1,70 @@
+//.map
+.map {
+  width: 100%;
+  height: 607px;
+  background: url('../img/map/map.png') no-repeat center / cover;
+  //.map__wrapper
+  &__wrapper {
+    padding-top: 58px;
+  }
+
+  //.map__block
+  &__block {
+    display: flex;
+    flex-direction: column;
+    background: #FAFAFA;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 73px 151px 75px 60px;
+    max-width: 452px;
+  }
+
+  //.map__title
+  &__title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 40px;
+  }
+
+  //.map__adress
+  &__adress {
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  //.map__time
+  &__time {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 15px;
+  }
+
+  //.map__tel
+  &__tel {
+    font-family: $secondary-family;
+    line-height: 150%;
+    margin-bottom: 15px;
+  }
+
+  //.map__mail
+  &__mail {
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+
+  //.map__list
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .map {
+    display: none;
+  }
+}
