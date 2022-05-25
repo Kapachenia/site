@@ -2,7 +2,8 @@
 .work {
   padding: 90px 0 130px 0;
   background: url('../img/work/work-bg.jpg') no-repeat center / cover;
-  max-height: 889px;
+  //max-height: 889px;
+  //z-index: 1;
   //.work__title
   &__title {
     margin-bottom: 65px;
@@ -32,7 +33,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: url('../img/work/work-elipse.png') no-repeat top right;
+    background: url('../img/work/work-elipse.png') no-repeat bottom left;
     width: max-content;
     max-height: 175px;
     max-width: 170px;
@@ -60,6 +61,7 @@
     &1 {
       top: 0;
       left: 29px;
+      //z-index: 2;
     }
 
     &2 {
@@ -106,6 +108,9 @@
       text-align: center;
       align-items: center;
     }
+    .work__list {
+      gap: 22px 44px;
+    }
   }
 
   //.work__arrow
@@ -115,6 +120,8 @@
     &1 {
       left: 142px;
       bottom: 187px;
+      z-index: 3;
+      transform: rotate(180deg);
     }
 
     &2 {
@@ -153,6 +160,46 @@
   }
 }
 
+.work__item-title-bg {
+  //z-index: 2;
+}
+
+.work__item1:hover {
+  background-size: 165px 168px;
+}
+.work__item2:hover {
+  background-size: 165px 168px;
+}
+.work__item3:hover {
+  background-size: 165px 168px;
+}
+.work__item4:hover {
+  background-size: 165px 168px;
+}
+.work__item5:hover {
+  background-size: 165px 168px;
+}
+.work__item6:hover {
+  background-size: 165px 168px;
+}
+.work__item7:hover {
+   background-size: 165px 168px;
+}
+.work__item8:hover {
+  background-size: 165px 168px;
+}
+
+
+
+@media (max-width: 900px) {
+  .work__list {
+    height: auto;
+  }
+}
+
+.work__item {
+  min-height: 170px;
+}
 
 @media (max-width: 375px) {
   .work {
