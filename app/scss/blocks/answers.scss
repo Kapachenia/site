@@ -165,7 +165,21 @@ details[open] > summary:before {
   .answers__item {
     padding-right: 70px;
   }
-  .answers__item-title:before {
-    height: 5px;
+  //.answers__item-title:before {
+  //  height: 5px;
+  //}
+  .answers__item-title-inner {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .answers__item-title {
+    min-height: 10px;
+    //padding-top: 10px;
+    //padding-bottom: 10px;
+  }
+  .answers__item-title-inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
