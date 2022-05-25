@@ -1,7 +1,7 @@
 <section class="section portfolio">
   <div class="container">
     <div class="portfolio__wrapper">
-      <h2 class="portfolio__title title" align="center">Ознакомьтесь с успешно реализованными нами <br> проектами</h2>
+      <h2 class="portfolio__title title">Ознакомьтесь с успешно <br> реализованными нами проектами</h2>
       <div class="portfolio__tabs">
         <button type="button" class="portfolio__tab portfolio__tab--active">Все проекты</button>
         <button type="button" class="portfolio__tab">Интернет - магазины</button>
@@ -62,66 +62,174 @@
       </div>
 
 
-      <div class="portfolio__content-mobile">
-        <div class="container">
-          <div class="slider2">
-            <div class="slider-line2">
-              <img class="slider-img2" src="./img/portfolio/project_pic1.png" alt="">
-              <img class="slider-img2" src="./img/portfolio/project_pic2.png" alt="">
-              <img class="slider-img2" src="./img/portfolio/project_pic3.png" alt="">
+<!--      <div class="portfolio__content-mobile">-->
+<!--        <div class="container">-->
+<!--          <div class="slider2">-->
+<!--            <div class="slider-line2">-->
+<!--              <img class="slider-img2" src="./img/portfolio/project_pic1.png" alt="">-->
+<!--              <img class="slider-img2" src="./img/portfolio/project_pic2.png" alt="">-->
+<!--              <img class="slider-img2" src="./img/portfolio/project_pic3.png" alt="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <button class="slider-prev">prev</button>-->
+<!--          <button class="slider-next">next</button>-->
+<!--        </div>-->
+<!--      </div>-->
+
+
+
+      <div class="image-slider swiper-container">
+        <div class="image-slider__wrapper swiper-wrapper">
+          <div class="image-slider__slider swiper-slide">
+            <div class="image-slider__image">
+              <img class="slider-img-mobile" src="./img/portfolio/project_pic1.png" alt="">
             </div>
           </div>
-          <button class="slider-prev">prev</button>
-          <button class="slider-next">next</button>
+          <div class="image-slider__slider swiper-slide">
+            <div class="image-slider__image">
+              <img class="slider-img-mobile" src="./img/portfolio/project_pic2.png" alt="">
+            </div>
+          </div>
+          <div class="image-slider__slider swiper-slide">
+            <div class="image-slider__image">
+              <img class="slider-img-mobile" src="./img/portfolio/project_pic3.png" alt="">
+            </div>
+          </div>
         </div>
+<!--        <div class="swiper-button-prev">1</div>-->
+<!--        <div class="swiper-button-next">1</div>-->
+
+<!--        <button class="test">test</button>-->
+<!--        <a href="#!" class="more-link">Показать все результаты</a>-->
+
       </div>
 
 
 
+<!--      <div class="swiper-button-prev">1</div>-->
+<!--      <div class="swiper-button-next">1</div>-->
+
+<!--<div class="swiper-container">-->
+<!--  <div class="swiper-wrapper">-->
+<!--    <div class="swiper-slide">-->
+<!--      Текст-->
+<!--    </div>-->
+<!--    <div class="swiper-slide">-->
+<!--      Текст-->
+<!--    </div>-->
+<!--    <div class="swiper-slide">-->
+<!--      Текст-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--     <div class="swiper-button-prev"></div>-->
+<!--     <div class="swiper-button-next"></div>-->
+
+
+
+
+
+
+<!--      <div class="portfolio__content-mobile">-->
+<!--        <div class="container">-->
+<!--          <div class="slider-mobile">-->
+<!--            <div class="slider-line-mobile">-->
+<!--              <img class="slider-img-mobile" src="./img/portfolio/project_pic1.png" alt="">-->
+<!--              <img class="slider-img-mobile" src="./img/portfolio/project_pic2.png" alt="">-->
+<!--              <img class="slider-img-mobile" src="./img/portfolio/project_pic3.png" alt="">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <button class="slider-prev">prev</button>-->
+<!--          <button class="slider-next">next</button>-->
+<!--        </div>-->
+<!--      </div>-->
+
       <a href="#!" class="more-link">Показать все результаты</a>
+
+
     </div>
   </div>
 
+  <script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper('.image-slider', {
+      navigation: {
+        nextEl: '.test',
+        prevEl: '.swiper-button-prev'
+      },
+      initialSlide: 1,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 2) + '</span>';
+      },
+      // slidesPerView: 2,
+    });
+
+
+
+  </script>
+
   <script>
-    const images_mob = document.querySelectorAll('.slider2 .slider-line2 img');
-    const sliderLine_mob = document.querySelector('.slider-line2');
-    let count_mob = 0;
-    let width_mob;
 
-    function initMob() {
-      console.log('resize');
-      width_mob = document.querySelector('.slider2').offsetWidth;
-      sliderLine_mob.style.width = width_mob*images_mob.length + 'px';
-      images_mob.forEach(item => {
-        item.style.width = width_mob + 'px';
-        item.style.height = 'auto';
-      });
-      rollSlider();
-    }
 
-    window.addEventListener('resize', initMob);
+    // new Swiper('.image-slider');
 
-    initMob();
+    // $(function() {
 
-    document.querySelector('.slider-prev').addEventListener('click', function () {
-      count_mob--;
-      if (count < 0) {
-        count_mob = images_mob.length - 1;
-      }
-      rollSlider();
-    });
+  // $('.rev_slider').slick({
 
-    document.querySelector('.slider-next').addEventListener('click', function () {
-      count_mob++;
-      if (count_mob >= images_mob.length) {
-        count_mob = 0;
-      }
-      rollSlider();
-    });
+  // })
 
-    function rollSlider() {
-      sliderLine_mob.style.transform = 'translate(-'+count_mob*width_mob+'px)';
-    }
+  // $('.rev_slider').slick({
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 300,
+  //   slidesToShow: 1,
+  //   centerMode: true,
+  //   variableWidth: true
+  // });
+// });
+
+    // const images_mob = document.querySelectorAll('.slider2 .slider-line2 img');
+    // const sliderLine_mob = document.querySelector('.slider-line2');
+    // let count_mob = 0;
+    // let width_mob;
+    //
+    // function initMob() {
+    //   console.log('resize');
+    //   width_mob = document.querySelector('.slider2').offsetWidth;
+    //   sliderLine_mob.style.width = width_mob*images_mob.length + 'px';
+    //   images_mob.forEach(item => {
+    //     item.style.width = width_mob + 'px';
+    //     item.style.height = 'auto';
+    //   });
+    //   rollSlider();
+    // }
+    //
+    // window.addEventListener('resize', initMob);
+    //
+    // initMob();
+    //
+    // document.querySelector('.slider-prev').addEventListener('click', function () {
+    //   count_mob--;
+    //   if (count < 0) {
+    //     count_mob = images_mob.length - 1;
+    //   }
+    //   rollSlider();
+    // });
+    //
+    // document.querySelector('.slider-next').addEventListener('click', function () {
+    //   count_mob++;
+    //   if (count_mob >= images_mob.length) {
+    //     count_mob = 0;
+    //   }
+    //   rollSlider();
+    // });
+    //
+    // function rollSlider() {
+    //   sliderLine_mob.style.transform = 'translate(-'+count_mob*width_mob+'px)';
+    // }
   </script>
 
 </section>

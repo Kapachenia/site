@@ -110,4 +110,22 @@
   .footer {
     display: none;
   }
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__left {
+    margin: 0;
+
+  }
+  .footer__left svg {
+    height: 30px;
+    padding-left: 40px;
+  }
+  .policy {
+    display: none;
+  }
+  .footer__right {
+    display: none;
+  }
 }

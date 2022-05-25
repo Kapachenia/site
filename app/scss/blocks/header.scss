@@ -166,7 +166,7 @@
     transition: all 0.5s linear;
     //.nav__burger--active
     &--active {
-      top: 0px;
+      top: 90px;
     }
     @media (max-width: 1600px) {
       width: 100%;
@@ -203,6 +203,10 @@
   }
 }
 
+//.header__wrapper {
+//  padding-bottom: 21px;
+//}
+
 @media (max-width: 375px) {
   .nav__burger {
     //top: -150px;
@@ -230,5 +234,17 @@
   }
   .hero__list {
     width: 142px;
+  }
+  .header__tel--mobile {
+    padding-bottom: 7px;
+  }
+  .nav__burger--active {
+    top: 50px
+  }
+  .nav__burger {
+    height: 56px;
+  }
+  .nav__burger--active {
+    top: 15px;
   }
 }

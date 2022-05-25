@@ -1,10 +1,10 @@
 //.answers
 .answers {
-  margin-top: 27px;
+  margin-top: 35px;
   margin-bottom: 120px;
   //.answers__title
   &__title {
-    margin-bottom: 60px;
+    margin-bottom: 66px;
   }
   //.answers__list
   &__list {
@@ -19,7 +19,7 @@
     flex-direction: column;
     //width: calc(50% - 16px);
     width: 736px;
-    padding: 32px 60px 42px 40px;
+    padding: 27px 60px 42px 40px;
     border: 2px solid #A4A2A2;
     border-radius: 10px;
     height: max-content;
@@ -62,6 +62,11 @@
   }
 }
 
+.answers__title title {
+  padding-left: 10px;
+}
+
+
 @media (max-width: 1600px) {
   .answers__list {
     justify-content: center;
@@ -100,5 +105,23 @@
   .answers__item-icon {
     top: 15px;
     right: 15px;
+  }
+  .answers__title title {
+    //padding-top: 31px;
+  }
+  .answers {
+    margin-top: 67px;
+  }
+  .answers__wrapper .answers__title {
+    margin-bottom: 24px;
+  }
+  .answers__item {
+    padding: 13px 30px 0px 8px;
+  }
+  .answers__list {
+    gap: 15px 32px;
+  }
+  .answers__item {
+    padding-right: 70px;
   }
 }

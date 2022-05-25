@@ -3,7 +3,7 @@
   position: relative;
   //background: url('../img/hero/hero-bg-right.jpg')no-repeat center right, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
   background: url('../img/hero/main-bg.jpg')no-repeat center;
-  //background-size: 100% auto;
+  background-size: auto 100%;
   @media (max-width: 1600px) {
     //background: url('../img/hero/hero-bg-right.jpg')no-repeat center right -280px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
   }
@@ -16,7 +16,7 @@
     padding: 118px 0 109px 128px;
     position: relative;
     @media (max-width: 1319px) {
-      padding: 70px 0 73px 0;
+      padding: 52px 0 73px 0;
     }
   }
   //.hero__img
@@ -221,14 +221,18 @@
     padding: 7px 0px 0px 15px;
   }
   .hero__name {
-    top: 177px;
-    right: 75px;
+    top: 168px;
+    right: 50px;
   }
   .hero__title {
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
+  }
+  .hero__wrapper {
+    //display: block;
+    width: 298px;
   }
 }
 
