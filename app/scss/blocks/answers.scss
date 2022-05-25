@@ -118,6 +118,9 @@ details[open] > summary:before {
 
 
 @media (max-width: 375px) {
+  .answers {
+    margin-bottom: 0;
+  }
   .answers__title {
     font-style: normal;
     font-weight: 600;
@@ -164,6 +167,7 @@ details[open] > summary:before {
   }
   .answers__item {
     padding-right: 70px;
+    padding-bottom: 10px;
   }
   //.answers__item-title:before {
   //  height: 5px;
