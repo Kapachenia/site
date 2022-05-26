@@ -1,6 +1,6 @@
 //.portfolio
 .portfolio {
-  margin-top: 120px;
+  margin-top: 116px;
   //.portfolio__title
   &__title {
     margin-bottom: 80px;
@@ -130,6 +130,10 @@
   }
 }
 
+.portfolio__navigation-show-all {
+  display: none;
+}
+
 //.portfolio__content-mobile {
 //  display: none;
 //}
@@ -149,6 +153,7 @@
 .reviews__slide-title {
   padding-left: 10px;
 }
+
 
 .reviews__slide-link {
   margin-left: 10px;
@@ -302,5 +307,11 @@
     font-size: 11px;
     line-height: 13px;
     color: #050103;
+  }
+  .reviews__slide-title {
+    //margin-top: 21px;
+  }
+  .reviews__slide-wrapper {
+    margin-top: 8px;
   }
 }

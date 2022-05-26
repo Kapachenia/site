@@ -13,6 +13,7 @@
       padding: 12px 0 6px 0;
       border-bottom: none;
     }
+
     & .header__wrapper {
       justify-content: space-between;
       align-items: center;
@@ -21,6 +22,7 @@
       }
     }
   }
+
   //.header__tel
   &__tel {
     font-family: $secondary-family;
@@ -38,15 +40,17 @@
       }
     }
   }
+
   //.header__wrapper
   &__wrapper {
     display: flex;
     align-items: center;
   }
+
   //.header__bottom
   &__bottom {
     & .header__wrapper {
-      padding: 24.5px 0 25px 0;
+      padding: 24.5px 0 21px 0;
       @media (max-width: 1600px) {
         justify-content: space-between;
       }
@@ -55,6 +59,7 @@
       }
     }
   }
+
   //.header__button
   &__button {
     @media (max-width: 1600px) {
@@ -62,6 +67,7 @@
     }
   }
 }
+
 //.about
 .about {
   // .about__list
@@ -75,6 +81,7 @@
     }
   }
 }
+
 //.adress
 .adress {
   //.adress__list
@@ -88,6 +95,7 @@
       justify-content: flex-end;
     }
   }
+
   //.adress__item
   &__item {
     //.adress__item--strong
@@ -99,6 +107,7 @@
         font-weight: 400;
       }
     }
+
     //.adress__item:firs-child
     &:first-child {
       @media (max-width: 1600px) {
@@ -107,10 +116,12 @@
     }
   }
 }
+
 //.logo
 .logo {
   margin-right: 38px;
 }
+
 //.location
 .location {
   display: flex;
@@ -124,10 +135,12 @@
   & svg {
     margin-right: 4px;
   }
+
   @media (max-width: 1600px) {
     display: none;
   }
 }
+
 //.nav
 .nav {
   max-width: 978px;
@@ -146,11 +159,13 @@
       flex-wrap: wrap;
     }
   }
+
   //.nav__link
   &__link {
     font-weight: 600;
     line-height: 150%;
   }
+
   //.nav__burger
   &__burger {
     position: absolute;
@@ -168,6 +183,7 @@
     &--active {
       top: 90px;
     }
+
     @media (max-width: 1600px) {
       width: 100%;
       display: flex;
@@ -175,10 +191,12 @@
       justify-content: center;
     }
   }
+
   @media (max-width: 1600px) {
     display: none;
   }
 }
+
 //.burger
 .burger {
   display: none;
@@ -192,16 +210,48 @@
     height: 2px;
     background: $black-color;
   }
+
   //.burger:hover
   &:hover {
     .burger__line {
       background: #F2B720;
     }
   }
+
   @media (max-width: 1600px) {
     display: flex;
   }
 }
+
+.nav__link {
+  position: relative;
+  z-index: 100;
+}
+
+.nav__link:hover:before {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background: #FFD752;
+  content: '';
+  height: 17px;
+  width: 70%;
+  z-index: -10;
+
+}
+
+.about__item:hover {
+  text-decoration: underline;
+}
+
+.location:hover {
+  text-decoration: underline;
+}
+
+.adress__item--hover:hover {
+  text-decoration: underline;
+}
+
 
 //.header__wrapper {
 //  padding-bottom: 21px;

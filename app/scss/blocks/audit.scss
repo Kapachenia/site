@@ -147,7 +147,7 @@
 .wrapper3 {
   position: relative;
   top: 510px;
-  left: 205px;
+  left: 223px;
 }
 
 .wrapper2 {
@@ -162,6 +162,24 @@
   left: 260px;
 }
 
+.wrapper5 {
+  position: relative;
+  top: 120px;
+  left: 750px;
+}
+
+.wrapper6 {
+  position: relative;
+  top: -64px;
+  left: -45px;
+}
+
+.content__line_mod-small {
+  position: relative;
+  top: 120px;
+  left: 750px;
+}
+
 .content__line {
   position: absolute;
   content: "";
@@ -169,8 +187,8 @@
   background-color: #F2B720;
   //transform: rotate(145deg);
   //bottom: 54%;
-  animation: mov-mon3 6s ease-in-out infinite;
-  animation-duration: 5s;
+  animation: mov-mon3 3s ease-in-out infinite;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: infinite;
@@ -178,6 +196,24 @@
   animation-fill-mode: none;
   animation-play-state: running;
   animation-name: mov-mon3;
+}
+
+.content__line-small {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: #F2B720;
+  //transform: rotate(145deg);
+  //bottom: 54%;
+  animation: mov-mon4 3s ease-in-out infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: mov-mon4;
 }
 
 .content__line_mod {
@@ -189,8 +225,8 @@
   transform: rotate(-30deg);
 
   //bottom: 54%;
-  animation: mov-mon1 6s ease-in-out infinite;
-  animation-duration: 5s;
+  animation: mov-mon1 3s ease-in-out infinite;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: infinite;
@@ -201,14 +237,42 @@
   transform-origin: top;
 }
 
+.content__line_mod-small {
+  position: absolute;
+  content: "";
+  //height: 2px;
+  width: 2px;
+  background-color: #F2B720;
+  transform: rotate(-30deg);
 
+  //bottom: 54%;
+  animation: mov-mon5 3s ease-in-out infinite;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: mov-mon5;
+  transform-origin: top;
+}
 
 @keyframes mov-mon3 {
   0%{
     width: 0;
   }
   100%{
-    width: 370px;
+    width: 390px;
+  }
+}
+
+@keyframes mov-mon4 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 290px;
   }
 }
 
@@ -218,6 +282,15 @@
   }
   100%{
     height: 100px;
+  }
+}
+
+@keyframes mov-mon5 {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 70px;
   }
 }
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwix Media</title>
-  <link rel="stylesheet" href="css/main.css?t=1653552311667">
+  <link rel="stylesheet" href="css/main.css?t=1653570849014">
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -25,7 +25,7 @@
           <li class="about__item"><a href="#!" class="about__link">Контакты</a></li>
         </ul>
         <ul class="adress__list">
-          <li class="adress__item">info@kwix-media.ru</li>
+          <li class="adress__item adress__item--hover">info@kwix-media.ru</li>
           <li class="adress__item adress__item--strong">Серпухов, Октябрьская, 12</li>
           <li class="adress__item">пн-пт 09:00 - 20:00</li>
         </ul>
@@ -131,14 +131,21 @@
       </ul>
       <a href="#!" class="hero__button button--black">Посмотреть цены</a>
 <!--      <img src="./img/hero/hero-girl.png" alt="girl" class="hero__img">-->
-<!--      <div class="hero__sertificates">-->
-<!--        <img src="./img/hero/cms-mark.png" alt="" class="hero__sertificates-img">-->
-<!--        <img src="./img/hero/yandex-mark.png" alt="" class="hero__sertificates-img">-->
-<!--      </div>-->
+      <div class="hero__sertificates">
+        <img src="./img/hero/cms-mark.png" alt="" class="hero__sertificates-img">
+        <img src="./img/hero/yandex-mark.png" alt="" class="hero__sertificates-img">
+      </div>
       <p class="hero__name">
         Менеджер проектов <br>
         <span class="hero__name--strong">Васильева Анастасия</span>
       </p>
+
+
+
+<!--      <div class="hero__wards1__wrapper"><img class="hero__wards1" src="../img/hero/hero-wards1.svg" alt="wards"></div>-->
+
+
+
     </div>
   </div>
 <!--  <img src="./img/hero/hero-girl-mobile.png" alt="girl" class="hero__img&#45;&#45;mobile">-->
@@ -558,7 +565,7 @@
                 <h2 class="reviews__slide-title">Отзывы</h2>
                 <span class="reviews__slide-subtitle">Магазин для пекарей и кондитеров</span>
                 <p class="reviews__slide-text">
-                  Благодарим за отличную работу! Все наши пожелания и сроки были соблюдены. Понравилась отзывчивость и внимательность менеджеров. С вами приятно работать!
+                  Благодарим за отличную работу! Все наши пожелания и сроки были соблюдены. Понравилась отзывчивость и внимательность менеджеров. <br> С вами приятно работать!
                 </p>
                 <a href="#!" class="reviews__slide-link">Команда AzartCake</a>
               </div>
@@ -573,7 +580,7 @@
                 <h2 class="reviews__slide-title">Отзывы</h2>
                 <span class="reviews__slide-subtitle">Магазин для пекарей и кондитеров</span>
                 <p class="reviews__slide-text">
-                  Благодарим за отличную работу! Все наши пожелания и сроки были соблюдены. Понравилась отзывчивость и внимательность менеджеров. С вами приятно работать!
+                  Благодарим за отличную работу! Все наши пожелания и сроки были соблюдены. Понравилась отзывчивость и внимательность менеджеров. <br> С вами приятно работать!
                 </p>
                 <a href="#!" class="reviews__slide-link">Команда AzartCake</a>
               </div>
@@ -588,7 +595,7 @@
                 <h2 class="reviews__slide-title">Отзывы</h2>
                 <span class="reviews__slide-subtitle">Магазин для пекарей и кондитеров</span>
                 <p class="reviews__slide-text">
-                  Благодарим за отличную работу! Все наши пожелания и сроки были соблюдены. Понравилась отзывчивость и внимательность менеджеров. С вами приятно работать!
+                  Благодарим за отличную работу! Все наши пожелания и сроки были соблюдены. Понравилась отзывчивость и внимательность менеджеров. <br> С вами приятно работать!
                 </p>
                 <a href="#!" class="reviews__slide-link">Команда AzartCake</a>
               </div>
@@ -724,6 +731,16 @@
   <div class="line3">
     <div class="wrapper3">
       <div class="content__line_mod"></div>
+    </div>
+  </div>
+  <div class="line5">
+    <div class="wrapper5">
+      <div class="content__line-small"></div>
+    </div>
+  </div>
+  <div class="line6">
+    <div class="wrapper6">
+      <div class="content__line_mod-small"></div>
     </div>
   </div>
 
@@ -922,7 +939,10 @@
           <input type="text" class="cta__form-input" placeholder="Номер телефона*">
         </div>
         <div class="cta__form-bottom">
-          <input type="checkbox" class="cta__form-check">
+
+          <input type="checkbox" class="cta__form-check" id="checkbox-id">
+          <label for="checkbox-id"></label>
+
           <span class="cta__form-span">Даю согласие на обработку персональных данных</span>
           <span class="cta__text-mob">*Отправляя заявку, я даю согласие на обработку персональных данных</span>
           <button class="cta__form-button button--black" type="button">Заказать консультацию</button>
@@ -938,7 +958,7 @@
     <div class="map__wrapper">
       <div class="map__block">
         <h3 class="map__title">Контакты</h3>
-        <span class="map__adress">г. Серпухов, улица Октябрьская д. 12</span>
+        <span class="map__adress">г. Серпухов, <br> улица Октябрьская д. 12</span>
         <span class="map__time">пн-вс 09:00 - 20:00</span>
         <span class="map__tel">+7 (926) 813-36-21</span>
         <span class="map__mail">info@seo-vk.ru </span>
@@ -1075,6 +1095,6 @@
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1653552311667"></script>
+<script src="js/main.js?t=1653570849014"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   //background: url('../img/hero/hero-bg-right.jpg')no-repeat center right, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
-  background: url('../img/hero/main-bg.jpg')no-repeat center;
+  background: url('../img/hero/hero-bg-girl.jpg')no-repeat center;
   background-size: auto 100%;
   @media (max-width: 1600px) {
     //background: url('../img/hero/hero-bg-right.jpg')no-repeat center right -280px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
@@ -119,8 +119,8 @@
     //.hero__sertificates-img
     &-img {
       @media (max-width: 1319px) {
-        width: 38px;
-        height: 40px;
+        width: auto;
+        height: 60px;
       }
     }
     @media (max-width: 1600px) {
@@ -136,7 +136,7 @@
   &__name {
     position: absolute;
     top: 280px;
-    right: 128px;
+    right: 157px;
     font-weight: 500;
     line-height: 140%;
     max-width: 218px;
@@ -150,6 +150,39 @@
     }
   }
 }
+
+
+
+
+
+
+
+//.hero__wards1__wrapper {
+//  position: absolute;
+//  background: url("../img/hero/hero-wards1.svg")no-repeat right;
+
+  //height: 200px;
+  //width: 200px;
+//}
+
+//.hero__wards1 {
+//  height: auto;
+//  width: 100px;
+//}
+
+//.hero__wards2 {
+//  position: absolute;
+  //background-image: ;
+//}
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 1600px) {
@@ -233,6 +266,10 @@
   .hero__wrapper {
     //display: block;
     width: 298px;
+  }
+  .hero__sertificates-img {
+    height: 40px;
+    display: none;
   }
 }
 
