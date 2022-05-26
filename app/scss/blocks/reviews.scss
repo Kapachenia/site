@@ -185,7 +185,7 @@
   }
   .reviews__slide-title {
     margin-bottom: 28px;
-    margin-top: 13px;
+    margin-top: 5px;
     padding-left: 0;
   }
   .reviews__slide-subtitle {
@@ -223,7 +223,7 @@
     padding-bottom: 6px;
   }
   .reviews__slider-arrows {
-    bottom: 21px;
+    bottom: 28px;
     right: -9px;
     gap: 0px;
   }
@@ -232,6 +232,24 @@
   }
   .reviews__slider-next {
     padding: 0;
+  }
+  .audit__block__title_1 {
+    display: none;
+  }
+  .audit__block__title_2 {
+    display: none;
+  }
+  .audit__block__title_3 {
+    display: none;
+  }
+  .line1 {
+    display: none;
+  }
+  .line2 {
+    display: none;
+  }
+  .line3 {
+    display: none;
   }
 }
 

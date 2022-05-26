@@ -148,6 +148,7 @@
 
 .more-link {
   padding-top: 27px;
+  letter-spacing: 1px;
 }
 
 .reviews__slide-title {
@@ -313,5 +314,8 @@
   }
   .reviews__slide-wrapper {
     margin-top: 8px;
+  }
+  .portfolio__navigation-show-all {
+    display: block;
   }
 }
