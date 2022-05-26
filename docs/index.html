@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwix Media</title>
-  <link rel="stylesheet" href="css/main.css?t=1653589879323">
+  <link rel="stylesheet" href="css/main.css?t=1653605489703">
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
   />
+  <link rel="icon" href="../img/icons/favicon.svg">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
           <li class="about__item"><a href="#!" class="about__link">Контакты</a></li>
         </ul>
         <ul class="adress__list">
-          <li class="adress__item adress__item--hover">info@kwix-media.ru</li>
+          <li class="adress__item adress__item__email adress__item--hover">info@kwix-media.ru</li>
           <li class="adress__item adress__item--strong">Серпухов, Октябрьская, 12</li>
           <li class="adress__item">пн-пт 09:00 - 20:00</li>
         </ul>
@@ -316,7 +317,8 @@
           <svg width="110" height="109" class="work__item-img">
             <use xlink:href="./img/icons/sprite.svg#work-icon6"></use>
           </svg>
-          <span class="work__item-title">Оптимиза ция</span>
+          <span class="work__item-title work__item-title--mod_close">Оптимиза ция</span>
+          <span class="work__item-title work__item-title--mod_open">Оптимизация</span>
           <img class="work__arrow4-mob" src="./img/work/work-arrow4-mob.svg" alt="arrow">
         </li>
         <li class="work__item work__item5">
@@ -764,59 +766,53 @@
 
 
   <section class="section audit">
-  <!--  <div class="line3">-->
 
-  <div class="line1">
-    <div class="wrapper1">
-      <div class="content__line_mod">
+  <div class="container audit__animation">
+    <div class="line1">
+      <div class="wrapper1">
+        <div class="content__line_mod">
+        </div>
+      </div>
+    </div>
+    <div class="line2">
+      <div class="wrapper2">
+        <div class="content__line"></div>
+      </div>
+    </div>
+    <div class="line4">
+      <div class="wrapper4">
+        <div class="content__line"></div>
+      </div>
+    </div>
+    <div class="line3">
+      <div class="wrapper3">
+        <div class="content__line_mod"></div>
+      </div>
+    </div>
+    <div class="line5">
+      <div class="wrapper5">
+        <div class="content__line-small"></div>
+      </div>
+    </div>
+    <div class="line6">
+      <div class="wrapper6">
+        <div class="content__line_mod-small"></div>
+      </div>
+    </div>
+
+    <div class="audit__block__title_1">
+      <span class="audit__block__info_1">8%</span>
+      <span>Компаний имеют хороший маркетинг</span>
+    </div>
+    <div class="audit__block__title_2">
+      <span class="audit__block__info_1">79%</span>
+      <span>Компаний думают, что имеют хороший маркетинг</span>
+    </div>
+    <div class="audit__block__title_3">
+      <span class="audit__block__info_1">13%</span>
+      <span>Компаний не имеют маркетинга</span>
     </div>
   </div>
-  </div>
-
-  <div class="line2">
-    <div class="wrapper2">
-      <div class="content__line"></div>
-    </div>
-  </div>
-
-  <div class="line4">
-    <div class="wrapper4">
-      <div class="content__line"></div>
-    </div>
-  </div>
-
-  <div class="line3">
-    <div class="wrapper3">
-      <div class="content__line_mod"></div>
-    </div>
-  </div>
-  <div class="line5">
-    <div class="wrapper5">
-      <div class="content__line-small"></div>
-    </div>
-  </div>
-  <div class="line6">
-    <div class="wrapper6">
-      <div class="content__line_mod-small"></div>
-    </div>
-  </div>
-
-
-  <div class="audit__block__title_1">
-    <span class="audit__block__info_1">8%</span>
-    <span>Компаний имеют хороший маркетинг</span>
-  </div>
-  <div class="audit__block__title_2">
-    <span class="audit__block__info_1">79%</span>
-    <span>Компаний думают, что имеют хороший маркетинг</span>
-  </div>
-  <div class="audit__block__title_3">
-    <span class="audit__block__info_1">13%</span>
-    <span>Компаний не имеют маркетинга</span>
-  </div>
-
-
-  <!--</div>-->
 
   <div class="container">
     <div class="audit__wrapper">
@@ -1146,6 +1142,12 @@
   </form>
 </div>
 
+<!--<button onclick="topFunction()" id="btnScrolling" title="Go to top"></button>-->
+<div onclick="topFunction()" id="btnScrolling"></div>
+
+<!--<div style="background-color:black;color:white;padding:30px">Scroll Down</div>-->
+<!--<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div>-->
+
 <!-- подключаем jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- подключаем Slick -->
@@ -1158,6 +1160,31 @@
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1653589879323"></script>
+<script src="js/main.js?t=1653605489703"></script>
+
+
+<!--//////-->
+<!--кнопка прокрутки-->
+
+<script>
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("btnScrolling").style.display = "block";
+    } else {
+      document.getElementById("btnScrolling").style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<!--/////-->
 </body>
 </html>

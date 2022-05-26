@@ -95,6 +95,40 @@ body {
   }
 }
 
+// кнопка прокрутки
+//body {
+//  font-family: Arial, Helvetica, sans-serif;
+//  font-size: 20px;
+//}
+
+#btnScrolling {
+  height: 85px;
+  width: 85px;
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+  z-index: 99;
+  //font-size: 18px;
+  //border: none;
+  //outline: none;
+  background-image: url("../img/icons/up_scroll.svg");
+  background-repeat: no-repeat;
+  //color: white;
+  cursor: pointer;
+  //padding: 15px;
+  //border-radius: 4px;
+}
+
+#btnScrolling:hover {
+  background-image: url("../img/icons/up_scroll_hover.svg");
+  width: 185px;
+}
+
+//#btnScrolling:hover {
+//  background-color: #555;
+//}
+
 //Подключаем вендоры
 @import "./vendor/slick";
 @import "./vendor/slick-theme";

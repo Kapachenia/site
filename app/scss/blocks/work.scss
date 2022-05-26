@@ -43,6 +43,7 @@
       font-size: 25px;
       line-height: 29px;
       color: #050103;
+      text-align: center;
       @media (max-width: 1600px) {
 
       }
@@ -160,6 +161,8 @@
   }
 }
 
+
+
 .work__item-title-bg {
   //z-index: 2;
 }
@@ -224,6 +227,10 @@
   display: none;
 }
 .work__arrow7-mob {
+  display: none;
+}
+
+.work__item-title--mod_close {
   display: none;
 }
 
@@ -335,5 +342,8 @@
   }
   .work__item-title {
     width: 70px;
+  }
+  .work__item-title--mod_open {
+    display: inline;
   }
 }
