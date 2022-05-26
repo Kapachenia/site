@@ -102,6 +102,10 @@
   right: -46px;
 }
 
+.reviews__slide-text--mob {
+  display: none;
+}
+
 @media (max-width: 1600px) {
   .reviews__slide-right {
     margin-left: 20px;
@@ -250,6 +254,12 @@
   }
   .line3 {
     display: none;
+  }
+  .reviews__slide-text {
+    display: none;
+  }
+  .reviews__slide-text--mob {
+    display: block;
   }
 }
 
