@@ -14,25 +14,30 @@
         </ul>
         <a href="tel:+79268133621" class="header__tel">+7 (926) 813-36-21</a>
 
-        <button href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>
 
 
+<!--////-->
 
-        <div class="modal__wrapper">
-          <form class="modal">
-            <input type="text" value="Имя">
-            <input type="text" value="Телефон">
-            <input type="text" value="Адресс сайта">
-            <input type="checkbox" value="Даю согласие на обработку персональных данных">
-            <div>
-              <button>Отправить</button>
-              <button>Отмена</button>
-            </div>
-          </form>
+        <button id="myBtn" href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>
+
+        <div id="modal__project" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="">
+              <input type="text" value="Имя">
+              <input type="text" value="Телефон">
+              <input type="text" value="Адресс сайта">
+              <input type="checkbox" value="Даю согласие на обработку персональных данных">
+              <div>
+                <button>Отправить</button>
+                <button>Отмена</button>
+              </div>
+            </form>
+          </div>
         </div>
 
 
-
+        <!--/////-->
 
 
       </div>
@@ -80,4 +85,26 @@
       </div>
     </div>
   </div>
+
+  <script>
+    let modal = document.getElementById("modal__project");
+    let btn = document.getElementById("myBtn");
+    let span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+
 </header>
