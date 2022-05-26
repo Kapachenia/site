@@ -96,12 +96,19 @@
             </div>
           </div>
         </div>
-<!--        <div class="swiper-button-prev">1</div>-->
-<!--        <div class="swiper-button-next">1</div>-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
 <!--        <button class="test">test</button>-->
 <!--        <a href="#!" class="more-link">Показать все результаты</a>-->
 
+      </div>
+
+
+      <div class="portfolio__navigation">
+        <div class="portfolio__navigation_prev"></div>
+        <button class="portfolio__navigation-show-all">Ещё работы</button>
+        <div class="portfolio__navigation_next"></div>
       </div>
 
 
@@ -156,8 +163,8 @@
 
     const swiper = new Swiper('.image-slider', {
       navigation: {
-        nextEl: '.test',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.portfolio__navigation_next',
+        prevEl: '.portfolio__navigation_prev'
       },
       initialSlide: 1,
       renderBullet: function (index, className) {

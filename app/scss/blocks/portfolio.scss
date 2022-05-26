@@ -257,4 +257,50 @@
     width: 330px;
     padding-left: 6px;
   }
+  //.swiper-button-prev:after {
+  //  display: none;
+  //}
+  .portfolio__navigation_prev {
+    background-image: url(../img/portfolio/portfolio_prev.svg);
+    height: 16px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 9px;
+    margin-left: 4px;
+  }
+  .swiper-button-next:after {
+    display: none;
+  }
+  .swiper-button-prev:after {
+    display: none;
+  }
+  .portfolio__navigation_next {
+    background-image: url(../img/portfolio/portfolio_next.svg);
+    height: 16px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 9px;
+    margin-right: 4px;
+  }
+  //.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  //  left: 25px;
+  //  top: 48.7%;
+  //}
+  .portfolio__navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .portfolio__navigation-show-all {
+    border: none;
+    background: linear-gradient(273.47deg, #F2B720 -1.55%, #FADD49 103.02%);
+    border-radius: 10px;
+    height: 33px;
+    width: 105px;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #050103;
+  }
 }

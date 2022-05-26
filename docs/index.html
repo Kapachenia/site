@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwix Media</title>
-  <link rel="stylesheet" href="css/main.css?t=1653514655028">
+  <link rel="stylesheet" href="css/main.css?t=1653543799047">
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -400,12 +400,19 @@
             </div>
           </div>
         </div>
-<!--        <div class="swiper-button-prev">1</div>-->
-<!--        <div class="swiper-button-next">1</div>-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
 
 <!--        <button class="test">test</button>-->
 <!--        <a href="#!" class="more-link">Показать все результаты</a>-->
 
+      </div>
+
+
+      <div class="portfolio__navigation">
+        <div class="portfolio__navigation_prev"></div>
+        <button class="portfolio__navigation-show-all">Ещё работы</button>
+        <div class="portfolio__navigation_next"></div>
       </div>
 
 
@@ -460,8 +467,8 @@
 
     const swiper = new Swiper('.image-slider', {
       navigation: {
-        nextEl: '.test',
-        prevEl: '.swiper-button-prev'
+        nextEl: '.portfolio__navigation_next',
+        prevEl: '.portfolio__navigation_prev'
       },
       initialSlide: 1,
       renderBullet: function (index, className) {
@@ -1048,6 +1055,6 @@
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1653514655028"></script>
+<script src="js/main.js?t=1653543799047"></script>
 </body>
 </html>
