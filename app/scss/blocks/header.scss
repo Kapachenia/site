@@ -252,10 +252,18 @@
   text-decoration: underline;
 }
 
-
 //.header__wrapper {
 //  padding-bottom: 21px;
 //}
+
+.header__button {
+  outline: 10px;
+  outline-offset: 0;
+}
+
+.modal__wrapper {
+  display: none;
+}
 
 @media (max-width: 375px) {
   .nav__burger {

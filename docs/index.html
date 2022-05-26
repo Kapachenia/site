@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwix Media</title>
-  <link rel="stylesheet" href="css/main.css?t=1653570849014">
+  <link rel="stylesheet" href="css/main.css?t=1653577124765">
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -30,7 +30,28 @@
           <li class="adress__item">пн-пт 09:00 - 20:00</li>
         </ul>
         <a href="tel:+79268133621" class="header__tel">+7 (926) 813-36-21</a>
-        <a href="#!" class="header__button discuss-button">Обсудить проект</a>
+
+        <button href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>
+
+
+
+        <div class="modal__wrapper">
+          <form class="modal">
+            <input type="text" value="Имя">
+            <input type="text" value="Телефон">
+            <input type="text" value="Адресс сайта">
+            <input type="checkbox" value="Даю согласие на обработку персональных данных">
+            <div>
+              <button>Отправить</button>
+              <button>Отмена</button>
+            </div>
+          </form>
+        </div>
+
+
+
+
+
       </div>
     </div>
   </div>
@@ -744,21 +765,36 @@
     </div>
   </div>
 
+
+  <div class="audit__block__title_1">
+    <span class="audit__block__info_1">8%</span>
+    <span>Компаний имеют хороший маркетинг</span>
+  </div>
+  <div class="audit__block__title_2">
+    <span class="audit__block__info_1">79%</span>
+    <span>Компаний думают, что имеют хороший маркетинг</span>
+  </div>
+  <div class="audit__block__title_3">
+    <span class="audit__block__info_1">13%</span>
+    <span>Компаний не имеют маркетинга</span>
+  </div>
+
+
   <!--</div>-->
 
   <div class="container">
     <div class="audit__wrapper">
-      <!--      <div class="audit__block audit__block&#45;&#45;top">-->
-      <!--        <span class="audit__block-title"><span class="audit__block-title&#45;&#45;yellow">8%</span>Компаний имеют хороший маркетинг</span>-->
-      <!--      </div>-->
-      <!--      <div class="audit__block audit__block&#45;&#45;middle">-->
-      <!--        <span class="audit__block-title"><span class="audit__block-title&#45;&#45;yellow">79%</span>Компаний думают, что имеют хороший маркетинг</span>-->
-      <!--        <img src="./img/audit/audit-line.png" alt="line" class="audit__block-img">-->
-      <!--      </div>-->
-      <!--      <div class="audit__block audit__block&#45;&#45;bottom">-->
-      <!--        <span class="audit__block-title"><span class="audit__block-title&#45;&#45;yellow">13%</span>Компаний не имеют маркетинга</span>-->
-      <!--        <img src="./img/audit/audit-line.png" alt="line" class="audit__block-img">-->
-      <!--      </div>-->
+<!--            <div class="audit__block audit__block&#45;&#45;top">-->
+<!--              <span class="audit__block-title"><span class="audit__block-title&#45;&#45;yellow">8%</span>Компаний имеют хороший маркетинг</span>-->
+<!--            </div>-->
+<!--            <div class="audit__block audit__block&#45;&#45;middle">-->
+<!--              <span class="audit__block-title"><span class="audit__block-title&#45;&#45;yellow">79%</span>Компаний думают, что имеют хороший маркетинг</span>-->
+<!--&lt;!&ndash;              <img src="./img/audit/audit-line.png" alt="line" class="audit__block-img">&ndash;&gt;-->
+<!--            </div>-->
+<!--            <div class="audit__block audit__block&#45;&#45;bottom">-->
+<!--              <span class="audit__block-title"><span class="audit__block-title&#45;&#45;yellow">13%</span>Компаний не имеют маркетинга</span>-->
+<!--&lt;!&ndash;              <img src="./img/audit/audit-line.png" alt="line" class="audit__block-img">&ndash;&gt;-->
+<!--            </div>-->
       <div class="audit__content">
         <h3 class="audit__content-title"><span class="audit__content-title--yellow">92% бизнеса Серпухова</span> сливают
           деньги из-за колхозного маркетинга.</h3>
@@ -1034,7 +1070,8 @@
             <span class="footer__contacts-time">пн-вс 09:00 - 20:00</span>
             <a href="mailto:info@seo-vk.ru" class="footer__contacts-mail">info@seo-vk.ru</a>
           </div>
-          <a href="#!" class="footer__button discuss-button">Обсудить проект</a>
+<!--          <a href="#!" class="footer__button discuss-button">Обсудить проект</a>-->
+          <button href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>
         </div>
         <div class="footer__right-bottom">
           <span class="copyright">
@@ -1083,6 +1120,17 @@
   </div>
 </footer>
 </div>
+
+
+<div class="modal__wrapper">
+  <form class="modal">
+    <input type="button" value="Имя">
+    <input type="button" value="Телефон">
+    <input type="button" value="Адресс сайта">
+    <input type="checkbox" value="Даю согласие на обработку персональных данных">
+  </form>
+</div>
+
 <!-- подключаем jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!-- подключаем Slick -->
@@ -1095,6 +1143,6 @@
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1653570849014"></script>
+<script src="js/main.js?t=1653577124765"></script>
 </body>
 </html>

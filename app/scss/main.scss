@@ -57,15 +57,25 @@ body {
   }
 }
 .discuss-button {
-  font-weight: 600;
-  line-height: 150%;
-  padding: 19.5px 36.5px;
   background: #FFD752;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 224px;
-  max-height: 66px;
+  border: none;
+  width: 224px;
+  height: 66px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #050103;
+  cursor: pointer;
+  //font-weight: 600;
+  //line-height: 150%;
+  //padding: 19.5px 36.5px;
+  //background: #FFD752;
+  //display: flex;
+  //justify-content: center;
+  //align-items: center;
+  //max-width: 224px;
+  //max-height: 66px;
 }
 .more-link {
   position: relative;
