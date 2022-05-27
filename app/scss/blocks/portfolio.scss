@@ -27,13 +27,13 @@
     cursor: pointer;
     //.portfolio__tab:hover
     &:hover {
-      color: #FFD752;
-      border-color: #FFD752;
+      color: #F2B720;
+      border-color: #F2B720;
     }
     //.portfolio__tab--active
     &--active {
-      color: #FFD752;
-      border-color: #FFD752;
+      color: #F2B720;
+      border-color: #F2B720;
     }
   }
   //.portfolio__content
@@ -163,6 +163,13 @@
 
 .reviews__slide-img {
   margin-left: 40px;
+}
+
+@media (max-width: 600px) {
+  .portfolio__title {
+    font-size: 40px;
+  }
+
 }
 
 @media (max-width: 375px) {

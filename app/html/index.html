@@ -60,8 +60,7 @@
   </form>
 </div>
 
-<!--<button onclick="topFunction()" id="btnScrolling" title="Go to top"></button>-->
-<div onclick="topFunction()" id="btnScrolling"></div>
+<div class="btnScrolling_hide" onclick="topFunction()" id="btnScrolling"></div>
 
 <!--<div style="background-color:black;color:white;padding:30px">Scroll Down</div>-->
 <!--<div style="background-color:lightgrey;padding:30px 30px 2500px">This example demonstrates how to create a "scroll to top" button that becomes visible when the user starts to scroll the page.</div>-->
@@ -86,12 +85,20 @@
 
 <script>
   // When the user scrolls down 20px from the top of the document, show the button
+
+  // window.addEventListener('resize',function(){
+  //   let res = window.innerWidth;
+  //   console.log(res)
+  // });
+
   window.onscroll = function() {scrollFunction()};
 
   function scrollFunction() {
+
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       document.getElementById("btnScrolling").style.display = "block";
-    } else {
+    }
+    else {
       document.getElementById("btnScrolling").style.display = "none";
     }
   }

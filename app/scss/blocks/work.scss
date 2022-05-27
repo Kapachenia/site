@@ -344,6 +344,9 @@
     width: 70px;
   }
   .work__item-title--mod_open {
+    display: none;
+  }
+  .work__item-title--mod_close {
     display: inline;
   }
 }

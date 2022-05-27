@@ -241,7 +241,6 @@
   height: 17px;
   width: 70%;
   z-index: -10;
-
 }
 
 .about__item:hover {
@@ -285,11 +284,140 @@
   background-color: rgba(0,0,0,0.4);
 }
 
-.modal__project {
+.modal-content {
+  position: absolute;
+  left: 30%;
+  top: 13%;
   align-items: center;
+  justify-content: center;
+  background: #FAFAFA;
+  height: 764px;
+  width: 1000px;
+}
+
+.modal__wrapper {
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  flex-direction: column;
+}
+.modal__header {
+  display: block;
+  //width: 100px;
+  text-align: center;
+  height: 100px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 41px;
+  margin-top: 70px;
+}
+
+.modal__title {
+  display: block;
+  width: 530px;
+  height: 100px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  width: 736px;
+}
+
+.modal__input {
+  outline: 0;
+  width: 736px;
+  height: 70px;
+  background: #FAFAFA;
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.5), 4px 4px 8px rgba(190, 151, 20, 0.5);
+  border-radius: 10px;
+  //border-color: #FFD752;
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+}
+
+.modal__wrapper__title {
+  //display: flex;
+}
+
+.modal__button__wrapper {
+  text-align: center;
+  display: block;
+}
+
+input[type=checkbox]+label {
+  background: url(../img/cta/cta-checkbox_1.png) no-repeat;
+  padding-left: 39px;
+  padding-top: 45px;
+}
+.modal__checkbox {
+  padding: 40px;
+  margin: 40px;
+  height: 100px;
+}
+.modal__button {
+  padding-top: 2px;
+  padding-left: 10px;
+}
+.lab {
+  display: block;
+  width: 20px;
+  //position: absolute;
+}
+
+.modal__checkbox_wrapper {
+  display: flex;
+  margin-left: 35px;
+}
+
+.test {
+  display: block;
+  width: 500px;
+  padding-left: 20px;
 }
 
 ////
+
+
+@media (max-width: 600px) {
+  .adress__list {
+    //flex-direction: column;
+    gap: 2px;
+  }
+  .header__tel {
+    font-size: 14px;
+  }
+  .adress__item {
+    //margin-right: 5px;
+  }
+  .header__wrapper {
+    //flex-direction: column;
+  }
+  .hero__name {
+    display: none;
+  }
+  .header__tel {
+  //display: none;
+  }
+  .logo {
+    //margin-bottom: 10px;
+  }
+  .logo__icons {
+    width: 150px;
+  }
+  .adress__list {
+    font-size: 12px;
+  }
+  .logo {
+    margin-right: 0px;
+  }
+}
 
 @media (max-width: 375px) {
   .nav__burger {
@@ -330,5 +458,19 @@
   }
   .nav__burger--active {
     top: 15px;
+  }
+  .logo {
+    height: 20px;
+  }
+  .adress__list {
+    margin-top: 7px;
+  }
+  .adress__item {
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .header__wrapper {
+    padding: 0px;
   }
 }

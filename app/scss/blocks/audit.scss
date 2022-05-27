@@ -143,6 +143,28 @@
   }
 }
 
+
+.audit__content-link1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  color: #050103;
+  width: 207.11px;
+  height: 65px;
+  background: linear-gradient(273.47deg, #F2B720 -1.55%, #FADD49 103.02%);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.audit__content-link1:hover {
+  filter: drop-shadow(-2px -2px 5px rgba(255, 255, 255, 0.25)) drop-shadow(2px 2px 5px rgba(157, 132, 3, 0.3));
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+
 .audit__animation {
   margin: 0 auto;
 }

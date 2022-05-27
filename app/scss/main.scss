@@ -30,6 +30,7 @@ body {
   @media (max-width: 1600px) {
     position: relative;
   }
+
 }
 
 .title {
@@ -77,6 +78,12 @@ body {
   //max-width: 224px;
   //max-height: 66px;
 }
+
+.discuss-button:hover {
+  background: #ffffff;
+  border: 2px solid #FFD752;
+}
+
 .more-link {
   position: relative;
   font-weight: 600;
@@ -124,6 +131,20 @@ body {
   background-image: url("../img/icons/up_scroll_hover.svg");
   width: 185px;
 }
+
+@media (max-width: 375px) {
+  #btnScrolling {
+    width: 83px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btnScrolling_hide {
+    display: none;
+  }
+}
+
 
 //#btnScrolling:hover {
 //  background-color: #555;

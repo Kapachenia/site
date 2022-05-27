@@ -137,6 +137,15 @@ input[type="checkbox"]:checked + label {
   color: red;
 }
 
+@media (max-width: 600px) {
+  .cta__text {
+    font-size: 16px;
+  }
+  .cta__tel {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 475px) {
   .cta {
     padding-bottom: 23px;
@@ -216,6 +225,9 @@ input[type="checkbox"]:checked + label {
   }
   .cta__subtitle {
     padding-left: 38px;
+  }
+  .cta__form-bottom label {
+    display: none;
   }
 }
 
