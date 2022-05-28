@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kwix Media</title>
-  <link rel="stylesheet" href="css/main.css?t=1653646413123">
+  <link rel="stylesheet" href="css/main.css?t=1653769624166">
   <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
   />
   <link rel="icon" href="../img/icons/favicon.svg">
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
 </head>
 
 <body>
@@ -856,7 +858,7 @@
   </div>
 </section>
   <section class="section map">
-  <div class="container">
+<!--  <div class="container">-->
     <div class="map__wrapper">
       <div class="map__block">
         <h3 class="map__title">Контакты</h3>
@@ -878,10 +880,101 @@
             </a>
           </li>
         </ul>
-      </div>
-<!--      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AOMI5-rU0jUaq96JZEgUafwxyZbr4edQR&amp;width=600&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>-->
+
+<!--    <div id="map"></div>-->
+<!--      </div>-->
     </div>
-  </div>
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3AOMI5-rU0jUaq96JZEgUafwxyZbr4edQR&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+
+    </div>
+
+
+  <script type="module">
+
+    // var myPlacemark = new ymaps.Placemark([55.76, 37.56], {}, {
+    //   iconLayout: 'default#image',
+    //   iconImageHref: '/maps/d../../jsapi/doc/2.1/examples/images/myIcon.gif',
+    //   iconImageSize: [30, 42],
+    //   iconImageOffset: [-3, -42]
+    // });
+
+    ymaps.ready([
+      'Map', 'Placemark', 'Clusterer', 'ClusterPlacemark'
+    ]).then(function() {
+      var map = new ymaps.Map('map', {
+        center: [55.75, 37.62], zoom: 9, controls: []
+      });
+      var placemarks = [
+        new ymaps.Placemark([55.75, 37.62]),
+        new ymaps.Placemark([55.75, 37.52]),
+        new ymaps.Placemark([55.75, 37.72]),
+      ];
+
+      var clusterer = createVisitedClusterer({
+        // Опции кластеризатора.
+        clusterIconColor: 'black'
+      }, {
+        // Опции "посещенных" кластеров.
+        iconColor: 'red'
+      });
+      clusterer.add(placemarks);
+
+      map.geoObjects.add(clusterer);
+    }).catch(console.error);
+
+    function createVisitedClusterer(options, visitedClusterOptions) {
+      // Создаем кластеризатор.
+      var clusterer = new ymaps.Clusterer(options);
+
+      // Сохраняем старую функцию createCluster с помощью Function.prototype.bind.
+      var defaultCreateCluster = clusterer.createCluster.bind(clusterer);
+
+      // Хеш посещенных кластеров.
+      var visitedClusters = { /* 'id,id,id': true */ };
+
+      // Переопределяем метод createCluster у кластеризатора.
+      clusterer.createCluster = function(center, geoObjects) {
+        // Создаем стандартный кластер.
+        var cluster = defaultCreateCluster(center, geoObjects);
+
+        // Собираем уникальные идентификаторы для объектов кнутри кластера.
+        var ids = geoObjects.map(function(x) { return getUniqueId(x); });
+        ids.sort(function(lhs, rhs) { return lhs - rhs; });
+
+        // Собираем уникальный идентификатор кластера.
+        var clusterId = ids.join(',');
+
+        if (visitedClusters[clusterId]) {
+          // Если кластер был посещен ранее, сразу применяем опции.
+          cluster.options.set(visitedClusterOptions);
+        } else {
+          cluster.events.add('click', function() {
+            // Помечаем кластер как посещенный при клике.
+            visitedClusters[clusterId] = true;
+
+            // Применяем опции, на случай зум по клику выключен,
+            // или зум уже максимальный.
+            cluster.options.set(visitedClusterOptions);
+          });
+        }
+
+        return cluster;
+      };
+
+      return clusterer;
+    }
+
+    // Генерация уникальных идентификаторов.
+    var uniqueIds = new WeakMap();
+    var lastUniqueId = 0;
+    function getUniqueId(geoObject) {
+      if (!uniqueIds.has(geoObject)) {
+        uniqueIds.set(geoObject, lastUniqueId++);
+      }
+      return uniqueIds.get(geoObject);
+    }
+
+  </script>
 
 </section>
   <footer class="footer">
@@ -1063,7 +1156,7 @@
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
 <!--    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/main.js?t=1653646413123"></script>
+<script src="js/main.js?t=1653769624166"></script>
 
 
 <!--//////-->
