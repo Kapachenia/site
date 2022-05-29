@@ -52,32 +52,8 @@
             <span class="footer__contacts-time">пн-вс 09:00 - 20:00</span>
             <a href="mailto:info@seo-vk.ru" class="footer__contacts-mail">info@seo-vk.ru</a>
           </div>
-<!--          <a href="#!" class="footer__button discuss-button">Обсудить проект</a>-->
-<!--          <button href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>-->
 
-          <!--////-->
-
-          <button id="myBtn1" href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>
-
-          <div id="modal__project1" class="modal1">
-            <div class="modal-content1">
-              <span class="close1">&times;</span>
-              <form action="">
-                <input type="text" value="Имя">
-                <input type="text" value="Телефон">
-                <input type="text" value="Адресс сайта">
-                <input type="checkbox" value="Даю согласие на обработку персональных данных">
-                <div>
-                  <button>Отправить</button>
-                  <button>Отмена</button>
-                </div>
-              </form>
-            </div>
-          </div>
-
-
-          <!--/////-->
-
+          <button id="myBtn_2" href="#!" class="header__button discuss-button" value="Открыть модальное окно">Обсудить проект</button>
 
         </div>
         <div class="footer__right-bottom">
@@ -100,8 +76,8 @@
               <li class="footer__list_contacts--mob">+7 (926) 813-36-21</li>
               <li class="footer__list_contacts--mob">info@seo-vk.ru </li>
               <li class="footer__list_contacts--mob social--mob">
-                <a href=""><img src="../img/footer/footer-social_1.svg" alt="WatsApp"></a>
-                <a href=""><img src="../img/footer/footer-social_2.svg" alt="Telegram"></a>
+                <a href="#"><img class="footer__list_contacts--mob_img" src="../img/footer/footer-social_1.svg" alt="WatsApp"></a>
+                <a href="#"><img class="footer__list_contacts--mob_img" src="../img/footer/footer-social_2.svg" alt="Telegram"></a>
               </li>
             </ul>
           </div>
@@ -128,23 +104,23 @@
 
 
   <script>
-    let modal1 = document.getElementById("modal__project1");
-    let btn1 = document.getElementById("myBtn1");
-    let span1 = document.getElementsByClassName("close1")[0];
-
-    btn1.onclick = function() {
-      modal1.style.display = "block";
-    }
-
-    span1.onclick = function() {
-      modal1.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      if (event.target == modal1) {
-        modal1.style.display = "none";
-      }
-    }
+    // let modal1 = document.getElementById("modal__project1");
+    // let btn1 = document.getElementById("myBtn1");
+    // let span1 = document.getElementsByClassName("close1")[0];
+    //
+    // btn1.onclick = function() {
+    //   modal1.style.display = "block";
+    // }
+    //
+    // span1.onclick = function() {
+    //   modal1.style.display = "none";
+    // }
+    //
+    // window.onclick = function(event) {
+    //   if (event.target == modal1) {
+    //     modal1.style.display = "none";
+    //   }
+    // }
   </script>
 
 </footer>

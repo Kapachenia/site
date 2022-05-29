@@ -198,6 +198,21 @@
 }
 
 
+@media (max-width: 1200px) {
+  //.work__item-title--mod_open {
+  //  display: none;
+  //}
+  //.work__item-title--mod_close {
+  //  display: block;
+  //}
+  .work__item-title {
+    font-size: 20px;
+  }
+  .work__list {
+    gap: 40px 44px
+  }
+}
+
 @media (max-width: 900px) {
   .work__list {
     height: auto;

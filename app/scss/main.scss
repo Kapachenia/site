@@ -143,6 +143,9 @@ body {
   .btnScrolling_hide {
     display: none;
   }
+  .modal {
+    display: none;
+  }
 }
 
 
@@ -166,3 +169,4 @@ body {
 @import "blocks/cta";
 @import "blocks/footer";
 @import "blocks/map";
+@import "blocks/modal";

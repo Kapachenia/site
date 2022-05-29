@@ -421,7 +421,6 @@
     position: relative;
     top: -81px;
     left: -309px;
-
   }
   .audit__block__title_1 {
     left: 450px;
@@ -432,9 +431,7 @@
   .audit__block__title_3 {
 
   }
-  .content__line {
-    display: none;
-  }
+
   .content__line_1600 {
     position: absolute;
     content: "";
@@ -467,6 +464,12 @@
 }
 .audit__content-way {
   width: 100px;
+}
+
+@media (max-width: 1200px) {
+  .audit__animation {
+    display: none;
+  }
 }
 
 @media (max-width: 375px) {

@@ -10,8 +10,11 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
   />
-  <link rel="icon" href="../img/icons/favicon.svg">
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  <link rel="icon" href="../img/favicons/favicon-32x32.png">
+  <link rel="icon" href="../img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../img/favicons/apple-icon-180x180.png">  <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+<!--  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>-->
 
 </head>
 
@@ -50,17 +53,10 @@
   @@include('./blocks/cta.html')
   @@include('./blocks/map.html')
   @@include('./blocks/footer.html')
+  @@include('./blocks/modal.html')
 </div>
 
 
-<div class="modal__wrapper">
-  <form class="modal">
-    <input type="button" value="Имя">
-    <input type="button" value="Телефон">
-    <input type="button" value="Адресс сайта">
-    <input type="checkbox" value="Даю согласие на обработку персональных данных">
-  </form>
-</div>
 
 <div class="btnScrolling_hide" onclick="topFunction()" id="btnScrolling"></div>
 

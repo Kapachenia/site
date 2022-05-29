@@ -5,6 +5,7 @@
   &__wrapper {
     padding: 120px 0;
   }
+
   //.catalog__list
   &__list {
     display: flex;
@@ -14,6 +15,7 @@
       gap: 60px 48px;
     }
   }
+
   //.catalog__item
   &__item {
     width: 480px;
@@ -24,12 +26,14 @@
     &-content {
       padding: 0 22px 44px 22px;
     }
+
     //.catalog__item-head
     &-head {
       margin-bottom: 32px;
       max-height: 287px;
-      background: url('../img/catalog/catalog-yellow.png')no-repeat bottom right;
+      background: url('../img/catalog/catalog-yellow.png') no-repeat bottom right;
     }
+
     //.catalog__item-title
     &-title {
       font-weight: 600;
@@ -40,6 +44,7 @@
         height: 82px;
       }
     }
+
     //.catalog__item-text
     &-text {
       font-size: 21px;
@@ -47,6 +52,7 @@
       margin-bottom: 38px;
       min-height: 75px;
     }
+
     //.catalog__item-price
     &-price {
       display: block;
@@ -57,6 +63,7 @@
       text-align: center;
       margin-bottom: 27px;
     }
+
     //.catalog__item-button
     &-button {
       font-weight: 600;
@@ -69,16 +76,17 @@
       //.catalog__item-button:hover
       &:hover {
         border-color: transparent;
-        background:
-          linear-gradient(262.02deg, rgba(242, 213, 65, 0.8) 3.53%, rgba(255, 236, 88, 0.8) 100%)padding-box,
-          linear-gradient(to left, #FDE465, #DCBF2B) border-box;
+        background: linear-gradient(262.02deg, rgba(242, 213, 65, 0.8) 3.53%, rgba(255, 236, 88, 0.8) 100%) padding-box,
+        linear-gradient(to left, #FDE465, #DCBF2B) border-box;
         box-shadow: -4px -4px 5px rgba(255, 255, 255, 0.7), 4px 4px 6px rgba(0, 0, 0, 0.2);
       }
     }
+
     //.catalog__item-img
     &-img {
       max-width: 480px;
     }
+
     @media (max-width: 1600px) {
       max-width: 388px;
     }
@@ -90,7 +98,6 @@
 }
 
 
-
 @media (max-width: 1600px) {
   .catalog__list {
     justify-content: center;
@@ -98,9 +105,22 @@
   .catalog__item-img {
     width: 100%;
   }
+  .catalog__item-head {
+    //background: url('../img/catalog/catalog-yellow-1600.png')no-repeat bottom right;
+  }
 }
 
-
+@media (max-width: 600px) {
+  .catalog__item-title {
+    font-size: 30px;
+  }
+  .catalog__item-text {
+    font-size: 17px;
+  }
+  .catalog__item-title {
+    margin-bottom: 20px;
+  }
+}
 
 
 @media (max-width: 375px) {
@@ -191,6 +211,9 @@
   }
   .catalog__item-title {
     text-align: center;
+  }
+  .catalog__item-head {
+    background: url('../img/catalog/catalog-yellow-mob.png') no-repeat bottom right;
   }
 }
 

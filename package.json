@@ -45,6 +45,7 @@
   ],
   "dependencies": {
     "jquery": "^3.6.0",
-    "swiper": "^8.1.5"
+    "swiper": "^8.1.5",
+    "ymaps": "^0.2.1"
   }
 }
