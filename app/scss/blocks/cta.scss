@@ -4,10 +4,11 @@
   background: url('../img/cta/cta-bg.jpg')no-repeat center;
   //.cta__wrapper
   &__wrapper {
-    max-width: 736px;
+    max-width: 743px;
   }
   //.cta__title
   &__title {
+    margin-left: 6px;
     margin-bottom: 45px;
   }
   //.cta__subtitle
@@ -17,6 +18,7 @@
     font-size: 35px;
     line-height: 41px;
     margin-bottom: 48px;
+    margin-left: 8px;
   }
   //.cta__form
   &__form {
@@ -26,7 +28,8 @@
     margin-bottom: 99px;
     //.cta__form-inputs
     &-inputs {
-      margin-bottom: 70px;
+      margin-bottom: 62px;
+      margin-left: 8px;
     }
     //.cta__form-input
     &-input {
@@ -60,7 +63,8 @@
       font-size: 21px;
       line-height: 25px;
       max-width: 287px;
-      margin-right: 90px;
+      margin-right: 75px;
+      margin-top: 7px;
     }
   }
   //.cta__text
@@ -71,6 +75,7 @@
     font-size: 35px;
     line-height: 41px;
     text-align: right;
+    margin-right: 4px;
   }
   //.cta__tel
   &__tel {
@@ -86,6 +91,9 @@
   display: none;
 }
 
+.cta__form-button__wrapper {
+  margin-top: 7px;
+}
 
 
 

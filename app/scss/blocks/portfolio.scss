@@ -9,8 +9,9 @@
   //.portfolio__tabs
   &__tabs {
     display: flex;
-    gap: 92px;
+    gap: 87px;
     margin-bottom: 89px;
+    margin-left: 8px;
     @media (max-width: 1600px) {
       display: none;
     }
@@ -21,6 +22,7 @@
     font-size: 25px;
     line-height: 29px;
     padding: 16px 34px;
+    padding-right: 45px;
     border: 2px solid #050103;
     border-radius: 10px;
     background: transparent;
@@ -147,9 +149,14 @@
   text-align: left;
 }
 
+.portfolio__title {
+  margin-left: 8px;
+
+}
+
 .more-link {
   padding-top: 27px;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }
 
 .reviews__slide-title {

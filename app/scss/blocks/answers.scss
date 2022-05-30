@@ -4,14 +4,16 @@
   margin-bottom: 120px;
   //.answers__title
   &__title {
-    margin-bottom: 66px;
+    margin-bottom: 63px;
+    //padding-left: 8px;
+    padding-top: 4px;
   }
 
   //.answers__list
   &__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 35px 32px;
+    gap: 35px 24px;
   }
 
   //.answers__item
@@ -65,9 +67,21 @@
 
       & .answers__item-title {
         margin-bottom: 24px;
+        max-width: 600px;
       }
     }
   }
+}
+
+.answers__item-title-inner {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 25px;
+}
+
+
+.answers__wrapper {
+  padding-left: 8px;
 }
 
 .answers__title title {
@@ -91,9 +105,10 @@
 .answers__item-title:before {
   content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 15H30' stroke='%23FFD752' stroke-width='2'/%3E%3Cpath d='M15 30L15 2.38419e-07' stroke='%23FFD752' stroke-width='2'/%3E%3C/svg%3E");
   position: absolute;
-  right: 10px;
+  right: 25px;
   margin: -5px 5px 0 0;
   cursor: pointer;
+  top: 32px;
 }
 
 details[open] > summary:before {
