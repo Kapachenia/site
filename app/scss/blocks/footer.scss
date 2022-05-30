@@ -133,8 +133,36 @@
   .footer__right-top {
     flex-direction: column-reverse;
   }
+  .header__button {
+    margin-left: 0;
+  }
+  .footer__nav {
+    //display: none;
+  }
+  .copyright {
+    font-size: 10px;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__left {
+    margin-right: 0;
+  }
+  .footer__list {
+    padding-right: 0px;
+  }
+  .footer__nav {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 900px) {
   .footer__nav {
     display: none;
+  }
+  .footer__right {
+    align-items: end;
   }
 }
 
@@ -316,5 +344,11 @@
   .footer__list_contacts--mob_img {
     width: 16px;
     height: 16px;
+  }
+  .adress__list {
+    flex-direction: row;
+  }
+  .header__button {
+    display: none;
   }
 }
