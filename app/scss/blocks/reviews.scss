@@ -118,7 +118,12 @@
   .reviews__slide-right {
     margin-left: 20px;
   }
+}
 
+@media (max-width: 1500px) {
+  .reviews__slider-arrows {
+    right: 0;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -160,10 +165,17 @@
     font-size: 14px;
   }
   .reviews__slide-right {
-   width: 80%;
+    width: 80%;
   }
   .reviews__slider-arrows {
-     bottom: 75px;
+    bottom: 75px;
+  }
+}
+
+@media (max-width: 900px) {
+  .reviews__slider-arrows {
+    bottom: 45px;
+    left: 100px;
   }
 }
 
