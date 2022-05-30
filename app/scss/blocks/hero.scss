@@ -116,6 +116,8 @@
     right: 128px;
     display: flex;
     gap: 39px;
+    height: 120px;
+    width: 267px;
     //.hero__sertificates-img
     &-img {
       @media (max-width: 1319px) {
@@ -153,43 +155,8 @@
 
 
 
-
-
-
-
-//.hero__wards1__wrapper {
-//  position: absolute;
-//  background: url("../img/hero/hero-wards1.svg")no-repeat right;
-
-  //height: 200px;
-  //width: 200px;
-//}
-
-//.hero__wards1 {
-//  height: auto;
-//  width: 100px;
-//}
-
-//.hero__wards2 {
-//  position: absolute;
-  //background-image: ;
-//}
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 1600px) {
   .hero__img--mobile {
-    //padding-right: 178px;
-    //height: 100%;
-    //width: auto;
   }
 }
 

@@ -237,5 +237,22 @@ input[type="checkbox"]:checked + label {
   .cta__form-bottom label {
     display: none;
   }
+  .cta__form-input {
+    width: 275px;
+    height: 46px;
+  }
+  .answers__item .answers__item-title {
+    width: 230px;
+  }
+  .cta .cta__form-input {
+    width: 276px;
+    height: 47px;
+  }
+  .cta__form-inputs {
+    margin-bottom: 0;
+  }
+  .cta__form-button {
+    margin-top: 24px;
+  }
 }
 

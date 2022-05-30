@@ -75,7 +75,7 @@
       font-weight: 500;
       font-size: 21px;
       line-height: 25px;
-      padding: 7.5px 11px;
+      padding: 7.5px 10px;
       max-width: 217px;
       background: #FFD752;
     }
@@ -172,6 +172,11 @@
   }
 }
 
+.reviews__slide-link:hover {
+  background-color: white;
+  border: 1px solid #ffd752;
+}
+
 @media (max-width: 900px) {
   .reviews__slider-arrows {
     bottom: 45px;
@@ -257,13 +262,13 @@
     max-width: 180px;
   }
   .reviews__wrapper {
-    height: 249px;
+    height: 240px;
   }
   .slider {
-    height: 249px;
+    height: 240px;
   }
   .slider-line {
-    height: 249px;
+    height: 240px;
   }
   .reviews__slider-prev svg {
     height: 8px;

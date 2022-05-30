@@ -188,13 +188,14 @@
     margin-left: 4px;
   }
   .catalog__wrapper {
-    padding-top: 19px;
+    padding-top: 23px;
   }
   .catalog__item-head {
     margin-bottom: 11px;
   }
   .catalog__item-text {
     min-height: 45px;
+    margin-bottom: 5px;
   }
   .catalog__item-title {
     margin-bottom: 14px;
@@ -217,9 +218,16 @@
   }
   .catalog__item-title {
     text-align: center;
+    margin-top: 12px;
   }
   .catalog__item-head {
     background: url('../img/catalog/catalog-yellow-mob.png') no-repeat bottom right;
+  }
+  .catalog__item-text {
+    width: 118px;
+  }
+  .catalog__item-title {
+    width: 129px;
   }
 }
 

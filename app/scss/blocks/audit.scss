@@ -551,4 +551,28 @@
     margin-left: 11px;
     padding-top: 9px;
   }
+  .audit__content-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .audit__content-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+  }
+  .audit__content {
+    width: 277px;
+    height: 177px;
+    top: 197px;
+    left: 18px;
+  }
+  .audit__content-link1 {
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 9px;
+    width: 100px;
+  }
 }

@@ -140,7 +140,7 @@ details[open] > summary:before {
   .answers__item {
     padding-left: 15px;
     padding-right: 30px;
-    margin-left: 29px;
+    margin-left: 21px;
     margin-right: 29px;
     min-height: 60px;
   }
@@ -183,5 +183,12 @@ details[open] > summary:before {
   }
   details[open] > summary:before {
     content: url("data:image/svg+xml,%3Csvg width='13' height='13' viewBox='0 0 13 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 11.7103L11.9999 1M12 12L1.00008 1.28965' stroke='%23FFD752'/%3E%3C/svg%3E");
+  }
+  .answers__item-title:before {
+    right: 2px;
+    top: 19px;
+  }
+  .answers__item {
+    padding-right: 35px;
   }
 }
