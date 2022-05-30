@@ -107,6 +107,7 @@ input[type=checkbox] + label {
   background: url(../img/cta/cta-checkbox_1.png) no-repeat;
   padding-left: 45px;
   padding-top: 45px;
+  cursor: pointer;
 }
 
 .modal__checkbox {
@@ -114,6 +115,35 @@ input[type=checkbox] + label {
   margin: 40px;
   height: 100px;
 }
+
+input[type=checkbox]:checked + label {
+  height: 45px;
+  width: 45px;
+}
+
+.modal__button--shadow {
+  border-radius: 5px;
+  box-shadow: none;
+  background-image: linear-gradient(#F6BB24, #FFE145), linear-gradient(2705deg, #FFE145, #F6BB24);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border: 2px solid transparent;
+  cursor: pointer;
+  width: 207px;
+  height: 65px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 25px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.modal__button--shadow:hover {
+  box-shadow: 2px 1000px 1px #fff inset;
+  filter: drop-shadow(-2px -2px 5px rgba(255, 255, 255, .25)) drop-shadow(2px 2px 5px rgba(157, 132, 3, .3));
+}
+
 
 .modal__button {
   padding-top: 2px;
@@ -123,7 +153,6 @@ input[type=checkbox] + label {
 .lab {
   display: block;
   width: 20px;
-  //position: absolute;
 }
 
 .modal__checkbox_wrapper {
@@ -140,7 +169,6 @@ input[type=checkbox] + label {
   line-height: 25px;
   padding-top: 6px;
   text-align: left;
-  //padding-left: 6px;
 }
 
 @media (max-width: 1200px) {
@@ -220,6 +248,11 @@ input[type=checkbox] + label {
   }
   .modal__button__wrapper {
     margin-top: 15px;
+  }
+  .modal__button--shadow {
+    width: 165px;
+    height: 55px;
+    font-size: 18px;
   }
 }
 
@@ -308,6 +341,11 @@ input[type=checkbox] + label {
   }
   .modal__button {
     margin-left: 0;
+  }
+  .modal__button--shadow {
+    font-size: 11px;
+    width: 140px;
+    height: 34px;
   }
 }
 

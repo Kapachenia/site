@@ -159,6 +159,13 @@
   letter-spacing: 1.2px;
 }
 
+.more-link:before {
+  display: none;
+}
+.more-link:hover {
+  text-decoration: underline;
+}
+
 .reviews__slide-title {
   padding-left: 10px;
 }

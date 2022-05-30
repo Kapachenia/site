@@ -211,6 +211,7 @@
   height: 20px;
   flex-direction: column;
   justify-content: space-between;
+  cursor: pointer;
   //.burger__line
   &__line {
     width: 100%;
@@ -277,6 +278,9 @@
   }
   .header__button {
     margin-left: 20px;
+  }
+  .header__bottom .header__wrapper {
+    padding-top: 0;
   }
 }
 
@@ -358,7 +362,7 @@
     height: 56px;
   }
   .nav__burger--active {
-    top: 15px;
+    top: 9px;
   }
   .logo {
     height: 20px;
@@ -376,5 +380,12 @@
   }
   .burger {
     margin-left: 20px;
+  }
+  .nav__link:hover:before {
+    display: none;
+    color: #F2B720;
+  }
+  .nav__link:hover {
+    color: #F2B720;
   }
 }

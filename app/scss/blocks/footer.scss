@@ -129,6 +129,14 @@
   display: none;
 }
 
+.footer__link {
+  width: 209px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 1600px) {
   .footer__right-top {
     flex-direction: column-reverse;

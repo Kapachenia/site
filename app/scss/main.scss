@@ -21,9 +21,6 @@ body {
   @media (max-width: 1319px) {
     max-width: 1140px;
   }
-  //@media (max-width: 1139px) {
-  //  max-width: 992px;
-  //}
 }
 
 .wrapper {
@@ -68,15 +65,6 @@ body {
   line-height: 150%;
   color: #050103;
   cursor: pointer;
-  //font-weight: 600;
-  //line-height: 150%;
-  //padding: 19.5px 36.5px;
-  //background: #FFD752;
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  //max-width: 224px;
-  //max-height: 66px;
 }
 
 .discuss-button:hover {
@@ -102,12 +90,6 @@ body {
   }
 }
 
-// кнопка прокрутки
-//body {
-//  font-family: Arial, Helvetica, sans-serif;
-//  font-size: 20px;
-//}
-
 #btnScrolling {
   height: 85px;
   width: 85px;
@@ -116,15 +98,9 @@ body {
   bottom: 100px;
   right: 100px;
   z-index: 99;
-  //font-size: 18px;
-  //border: none;
-  //outline: none;
   background-image: url("../img/icons/up_scroll.svg");
   background-repeat: no-repeat;
-  //color: white;
   cursor: pointer;
-  //padding: 15px;
-  //border-radius: 4px;
 }
 
 #btnScrolling:hover {
@@ -147,11 +123,6 @@ body {
     display: none;
   }
 }
-
-
-//#btnScrolling:hover {
-//  background-color: #555;
-//}
 
 //Подключаем вендоры
 @import "./vendor/slick";
