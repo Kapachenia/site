@@ -8,7 +8,7 @@
   //z-index: 1;
   //.work__title
   &__title {
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     margin-left: 8px;
   }
 
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 537px;
+    height: 543px;
     @media (max-width: 1600px) {
       gap: 88px 44px;
       flex-direction: row;
@@ -36,10 +36,10 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    background: url('../img/work/work-elipse1.png') no-repeat bottom left;
-    width: max-content;
-    max-height: 175px;
-    max-width: 170px;
+    background: url('../img/work/work-elipse1.png') left 43px bottom 12px no-repeat;
+    //width: max-content;
+    height: 181px;
+    width: 205px;
     //.work__item-title
     &-title {
       font-weight: 500;
@@ -64,43 +64,50 @@
     //.work__item1
     &1 {
       top: 0;
-      left: 58px;
+      left: 56px;
+      padding-right: 27px;
       //z-index: 2;
     }
 
     &2 {
-      left: 172px;
-      bottom: 10px;
+      left: 169px;
+      bottom: -1px;
+      padding-right: 20px;
     }
 
     &3 {
       left: 424px;
       top: -3px;
+      padding-right: 22px;
     }
 
     &4 {
       left: 550px;
-      bottom: 10px;
+      bottom: 3px;
+      padding-right: 17px;
     }
 
     &5 {
-      right: 528px;
-      top: -4px;
+      right: 495px;
+      top: 0px;
+      padding-right: 19px;
     }
 
     &6 {
-      right: 412px;
-      bottom: 10px;
+      right: 381px;
+      bottom: 1px;
+      //margin-right: 10px;
     }
 
     &7 {
-      right: 183px;
-      top: -3px;
+      right: 150px;
+      top: 0px;
+      margin-right: 5px;
     }
 
     &8 {
-      right: 35px;
-      bottom: 10px;
+      right: 4px;
+      bottom: 1px;
     }
 
     @media (max-width: 1600px) {

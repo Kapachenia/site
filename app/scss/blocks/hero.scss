@@ -1,14 +1,27 @@
 //.hero
 .hero {
   position: relative;
-  //background: url('../img/hero/hero-bg-right.jpg')no-repeat center right, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
-  background: url('../img/hero/hero-bg-girl.jpg')no-repeat center;
+  background: url('../img/hero/hero-bg-right.jpg')no-repeat center left 1189px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
   background-size: auto 100%;
+  //background-position: bottom 50px right 100px;
+  //background: url('../img/hero/hero-bg-girl.jpg')no-repeat center;
+  //background-size: auto 100%;
   @media (max-width: 1600px) {
+    background: url('../img/hero/hero-bg-right.jpg')no-repeat center left 960px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
+
     //background: url('../img/hero/hero-bg-right.jpg')no-repeat center right -280px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
   }
   @media (max-width: 1319px) {
-    //background: url('../img/hero/hero-bg-mobile.png')no-repeat center right;
+  background: url('../img/hero/hero-bg-right.jpg')no-repeat center left 760px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
+  }
+  @media (max-width: 1139px) {
+    background: url('../img/hero/hero-bg-right.jpg')no-repeat center left 637px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
+  }
+  @media (max-width: 1000px) {
+    background: url('../img/hero/hero-bg-right.jpg')no-repeat center left 520px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
+  }
+  @media (max-width: 800px) {
+    background: url('../img/hero/hero-bg-right.jpg')no-repeat center left 360px, url('../img/hero/hero-bg-left.jpg')no-repeat center / cover;
   }
   //.hero__wrapper
   &__wrapper {
@@ -24,6 +37,8 @@
     position: absolute;
     right: 294px;
     bottom: 0;
+    height: 100%;
+    transform: scale(-1, 1);
     //.hero__img--mobile
     &--mobile {
       display: none;
@@ -42,7 +57,7 @@
       transform: scale(-1, 1);
       width: 400px;
     }
-    @media (max-width: 1139px) {
+    @media (max-width: 345px) {
       display: none;
     }
   }
@@ -153,7 +168,17 @@
   }
 }
 
+@media (max-width: 1600px) {
+.hero__img {
+  right: 0;
+}
+}
 
+
+.opacity {
+  z-index: 10000;
+  position: relative;
+}
 
 @media (max-width: 1600px) {
   .hero__img--mobile {
@@ -236,6 +261,9 @@
   }
   .hero__sertificates-img {
     height: 40px;
+    display: none;
+  }
+  .hero__img {
     display: none;
   }
 }

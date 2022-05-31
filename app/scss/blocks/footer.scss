@@ -137,6 +137,10 @@
   text-decoration: underline;
 }
 
+.footer__link--inner {
+  width: 100px;
+}
+
 @media (max-width: 1600px) {
   .footer__right-top {
     flex-direction: column-reverse;

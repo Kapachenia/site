@@ -395,41 +395,43 @@
 
 
 @media (max-width: 1600px) {
+  .content__line {
+    display: none;
+  }
+  .content__line-small {
+    display: none;
+  }
   .wrapper1 {
     position: relative;
     top: 305px;
     left: 129px;
   }
-
   .wrapper3 {
     position: relative;
     top: 519px;
     left: -6px;
   }
-
   .wrapper2 {
     position: relative;
     top: 391px;
     left: 179px;
   }
-
   .wrapper4 {
     position: relative;
     top: 604px;
     left: 45px;
   }
-
   .wrapper5 {
     position: relative;
     top: 100px;
     left: 485px;
   }
-
   .wrapper6 {
     position: relative;
     top: -81px;
     left: -309px;
   }
+
   .audit__block__title_1 {
     left: 450px;
   }
@@ -466,19 +468,126 @@
       width: 0;
     }
     100% {
-      width: 190px;
+      width: 270px;
     }
   }
+
+
+  .content__line_1600-small {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #F2B720;
+    //transform: rotate(145deg);
+    //bottom: 54%;
+    animation: mov-mon3_1600-small 3s ease-in-out infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mov-mon3_1600-small;
+  }
+  .content__line_1600 {
+    display: inline-block;
+  }
+
+  @keyframes mov-mon3_1600-small {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 230px;
+    }
+  }
+
 }
 
 .audit__content-way {
   width: 100px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
+  .content__line_1600-small {
+    display: none;
+  }
+  .content__line_1600 {
+    display: none;
+  }
+  .content__line_1300-small {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #F2B720;
+    //transform: rotate(145deg);
+    //bottom: 54%;
+    animation: mov-mon3_1300-small 3s ease-in-out infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mov-mon3_1300-small;
+  }
+  .content__line_1300 {
+    display: none;
+  }
+
+  @keyframes mov-mon3_1300-small {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 130px;
+    }
+  }
+
+  .content__line_1300 {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: #F2B720;
+    //transform: rotate(145deg);
+    //bottom: 54%;
+    animation: mov-mon3_1300 3s ease-in-out infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: mov-mon3_1300;
+  }
+  .content__line_1300 {
+    display: inline-block;
+  }
+
+  @keyframes mov-mon3_1300 {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 190px;
+    }
+  }
+
+
+
+}
+
+
+@media (max-width: 1000px) {
   .audit__animation {
     display: none;
   }
+
+
+
 }
 
 @media (max-width: 600px) {
